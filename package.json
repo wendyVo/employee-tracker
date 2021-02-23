@@ -1,0 +1,26 @@
+{
+    "name": "employee-tracker",
+    "version": "1.0.0",
+    "description": "Content management systems CLI applications",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wendyVo/employee-tracker.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/wendyVo/employee-tracker/issues"
+    },
+    "homepage": "https://github.com/wendyVo/employee-tracker#readme",
+    "dependencies": {
+        "console.table": "^0.10.0",
+        "inquirer": "^7.3.3",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.7"
+    }
+}
