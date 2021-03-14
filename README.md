@@ -46,7 +46,8 @@ npm install
 ## Screenshots:
 - Main CLI application
 <br/>
-![screenshots](./assets/screenshots.PNG)
+
+![screenshots](assets/screenshots.PNG)
 
 ## License
 
