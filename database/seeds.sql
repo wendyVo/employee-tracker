@@ -1,18 +1,14 @@
 
 USE employees_db;
-CREATE TABLE employee (
-    id INT UNSIGNED AUTO_INCREMENT,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
-    role_id INT UNSIGNED NOT NULL,
-    PRIMARY KEY (id),
-    INDEX roleId (role_id),
-    CONSTRAINT role_fk FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE CASCADE,
-    manager_id INT UNSIGNED,
-    INDEX manId (manager_id),
-    CONSTRAINT manager_fk FOREIGN KEY (manager_id) REFERENCES employee(id) ON DELETE CASCADE
-    )
 
+INSERT INTO department (name)
+VALUES ("Sales"), ("Marketing"), ("HR");
+
+INSERT INTO role (title, salary, department_id)
+VALUES ("Marketing Manager", 100000, 2), ("Sales Consultant", 60000,1),("HR Assistant",50000,3);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ("Cassie", "Stafford", 1, 1), ("Ethan","Paulson", 3, null), ("Kimball", "Haley", 2, null);
 
 
 
